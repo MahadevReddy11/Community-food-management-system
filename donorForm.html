@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Donate Food</title>
+  <link rel="stylesheet" href="donor.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="section">
+      <span class="logo">Food Management System</span>
+      <nav class="navbar">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="what_We_Do.html"><i class="fas fa-lightbulb"></i> What We Do</a>
+        <!-- <a href="donorForm.html"><i class="fas fa-handshake"></i> Donate</a> -->
+        <a href="volunteerForm.html"><i class="fas fa-users"></i> Volunteer</a>
+        <a href="impact.html"><i class="fas fa-chart-line"></i> Impact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Donate Food</h1>
+    <p>Fill in the details to post leftover food. Volunteers nearby will see and claim it.</p>
+  </div>
+
+  <!-- Donation Form -->
+  <div class="section form-card">
+    <form action="DonorServlet" method="post">
+      <label>Your Name</label>
+      <input type="text" name="name" placeholder="Enter your name" required>
+
+      <label>Food Name</label>
+      <input type="text" name="food_name" placeholder="Enter food name" required>
+
+      <label>Quantity (e.g., 5 plates)</label>
+      <input type="text" name="quantity" placeholder="Enter quantity" required>
+
+      <label>Location</label>
+      <input type="text" name="location" placeholder="Enter pickup location" required>
+
+      <label>Phone Number</label>
+      <input type="tel" name="phone" placeholder="Enter your phone number" required>
+
+      <button type="submit">Donate Food</button>
+    </form>
+
+    <!-- Back to Home Button -->
+    <div class="back-btn">
+      <a href="index.html"><button type="button">Back to Home</button></a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Volunteer Portal</title>
+  <link rel="stylesheet" href="volunteerForm.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="section">
+      <span class="logo">Food Management System</span>
+      <nav class="navbar">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="what_We_do.html"><i class="fas fa-lightbulb"></i> What We Do</a>
+        <a href="donorForm.html"><i class="fas fa-handshake"></i> Donate</a>
+        <!-- <a href="volunteerForm.html"><i class="fas fa-users"></i> Volunteer</a> -->
+        <a href="impact.html"><i class="fas fa-chart-line"></i> Impact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Volunteer Portal</h1>
+    <p>Enter your details to view available food posts in your area.</p>
+  </div>
+
+  <!-- Volunteer Form -->
+  <div class="form-card">
+    <form action="VolunteerServlet" method="get">
+      <label>Your Name</label>
+      <input type="text" name="name" placeholder="Enter your name" required>
+
+      <label>Phone</label>
+      <input type="text" name="phone" placeholder="Enter your phone number" required>
+
+      <button type="submit">View Available Food</button>
+    </form>
+
+    <!-- Back to Home Button -->
+    <div class="back-btn">
+      <a href="index.html"><button type="button">Back to Home</button></a>
+    </div>
+  </div>
+</body>
+</html>

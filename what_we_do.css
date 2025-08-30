@@ -1,0 +1,154 @@
+/* Base & Typography */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: linear-gradient(135deg, #f9f9f9, #eafaf1);
+}
+
+/* Header */
+header {
+  background: #ffffff;
+  padding: 8px 0; /* reduced height */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.logo-img {
+  height: 55px;  /* reduced size */
+  width: auto;
+  border-radius: 10px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.navsec2 a {
+  padding: 8px 12px; /* reduced padding */
+  align-items: center;
+  gap: 6px;
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  transition: color 0.3s, transform 0.2s, background 0.3s;
+  border-radius: 6px;
+}
+
+.navsec2 a:hover {
+  background: #27ae60;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.navsec2 i {
+  font-size: 16px;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #27ae60, #2ecc71, #3498db);
+  color: #fff;
+  padding: 70px 20px;
+  text-align: center;
+  border-radius: 0 0 40px 40px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #fdfdfd;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Section Container */
+.section {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #27ae60;
+  text-align: center;
+}
+
+.mission-text {
+  font-size: 1.1rem;
+  color: #444;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Steps Section */
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.step-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.step-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+.step-card i {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.card-green i { color: #27ae60; }
+.card-blue i { color: #2980b9; }
+.card-orange i { color: #e67e22; }
+
+.step-card h3 {
+  margin-bottom: 8px;
+  color: #2c3e50;
+  font-size: 1.2rem;
+}
+
+.step-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(to right, #2c3e50, #34495e);
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
